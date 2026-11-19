@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Sederhana</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 760px; margin: 30px auto; padding: 0 15px; background: #f4f6f8; }
+    h1 { text-align: center; }
+    form, .block { background: #fff; padding: 15px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; }
+    label { display: block; margin-top: 8px; font-weight: bold; }
+    input { width: 100%; padding: 8px; box-sizing: border-box; margin-top: 4px; }
+    button { margin-top: 12px; padding: 10px 20px; cursor: pointer; }
+    .hash { font-family: monospace; font-size: 12px; word-break: break-all; }
+    .ok { color: green; } .bad { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Blockchain Sederhana</h1>
+
+  <form method="post">
+    <label>Sender (pengirim)</label>
+    <input type="text" name="sender" required>
+    <label>Receiver (penerima)</label>
+    <input type="text" name="receiver" required>
+    <label>Amount (jumlah)</label>
+    <input type="number" name="amount" min="0" step="any" required>
+    <button type="submit">Kirim &amp; Tambang</button>
+  </form>
+
+  <p>Status
